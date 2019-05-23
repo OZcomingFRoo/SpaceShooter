@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 891649343405887552}
   - component: {fileID: 3486837273656429926}
   - component: {fileID: 5038274689120041523}
-  - component: {fileID: 5038274689120041524}
   - component: {fileID: 5038274689120041525}
   m_Layer: 0
   m_Name: PlayerSpaceShip
@@ -151,20 +150,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b58501f40020c42a3f486a0a783498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LaserSprite: {fileID: 21300000, guid: 8719c0160b59c1f4f90dbfcf191d5048, type: 3}
---- !u!114 &5038274689120041524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3486837273656429925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36d28c196e79b1d4aa1febec3aa777d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LaserSprite: {fileID: 21300000, guid: 7544bbb3970bde541b5595321ddf7e89, type: 3}
+  LaserPrefab: {fileID: 4133311443453980170, guid: 6e168de0415aa4846b437d1cdcf3abaf,
+    type: 3}
+  LaserSpeed: 25
+  LaserDamage: 3
+  numberOfBurstShots: 3
+  burstFireRate: 0.075
 --- !u!114 &5038274689120041525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,4 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 405b91be8d059644495251e10b5772fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LaserSprite: {fileID: 21300000, guid: b1200bfc098709641938ee0e575c1ac4, type: 3}
+  LaserPrefab: {fileID: 5409833321561744892, guid: 262fac4d3f40e3e43ac40fd2aa640757,
+    type: 3}
+  LaserSpeed: 32
+  LaserDamage: 2
+  LaserFireRate: 0.1
