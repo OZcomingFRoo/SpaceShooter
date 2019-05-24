@@ -46,8 +46,8 @@ public class DoubleShot : MonoBehaviour
             var Laser1 = Instantiate(LaserPrefab, this.transform.position, Quaternion.identity);
             var Laser2 = Instantiate(LaserPrefab, this.transform.position, Quaternion.identity);
             // Set lasers position side by side
-            Laser1.transform.position = new Vector2(Laser1.transform.position.x - 0.5f, Laser1.transform.position.y);
-            Laser2.transform.position = new Vector2(Laser2.transform.position.x + 0.5f, Laser2.transform.position.y);
+            Laser1.transform.position = new Vector3(Laser1.transform.position.x - 0.5f, Laser1.transform.position.y,1);
+            Laser2.transform.position = new Vector3(Laser2.transform.position.x + 0.5f, Laser2.transform.position.y,1);
             // Shoot 2 lasers
             Laser1.GetComponent<Rigidbody2D>().velocity = Vector2.up * LaserSpeed;
             Laser2.GetComponent<Rigidbody2D>().velocity = Vector2.up * LaserSpeed;

@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
     float horizontalSpeed;
@@ -15,10 +13,6 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
-        print("XMin" + CameraBoundries.XMin().ToString());
-        print("XMax" + CameraBoundries.XMax().ToString());
-        print("YMin" + CameraBoundries.YMin().ToString());
-        print("YMax" + CameraBoundries.YMax().ToString());
         if (horizontalSpeed <= 0) horizontalSpeed = 5;
         if (verticalSpeed <= 0) verticalSpeed = 5;
     }
@@ -33,6 +27,6 @@ public class Movement : MonoBehaviour
         float newXPos = Mathf.Clamp(Position.x + XMovement * Time.deltaTime * verticalSpeed,
             CameraBoundries.XMin() + this.XRadius, CameraBoundries.XMax() - this.XRadius);
 
-        Position = new Vector3(newXPos, newYPos,-1);
+        Position = new Vector3(newXPos, newYPos,1);
     }
 }

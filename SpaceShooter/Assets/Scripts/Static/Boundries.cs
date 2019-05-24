@@ -2,8 +2,8 @@
 
 public static class CameraBoundries
 {
-    private static Camera MainCamera { get { return Camera.main; } }
-    
+    public static Camera MainCamera { get { return Camera.main; } }
+
     public static float XMin()
     {
         return MainCamera.ViewportToWorldPoint(Vector3.zero).x;
