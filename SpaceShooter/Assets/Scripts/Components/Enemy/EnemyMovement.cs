@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    // Both can be set by developer or scriptable objects
     [SerializeField]
     public Path enemyPath;
     [SerializeField]
-    float stepSpeed;
+    public float stepSpeed;
 
     //Properties
     public int NextWaypoint { get; set; }
@@ -17,7 +18,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void Start()
     {
-        if (stepSpeed <= 0) stepSpeed = 3;
+        if (stepSpeed <= 0) stepSpeed = 20;
         transform.position = enemyPath[0];
         NextWaypoint = 1;
     }
