@@ -18,7 +18,7 @@ public class Path : ScriptableObject
 
     public Vector3 this[int index]
     {
-        get { return index < this.Length ? waypoints[index].WaypointGlobalPosition : Vector3.zero; }
+        get { return index < this.Length ? waypoints[index].WaypointGlobalPosition : new Vector3(-999, -999, -999); }
     }
 
     /// <summary>

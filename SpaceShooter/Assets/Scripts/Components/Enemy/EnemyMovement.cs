@@ -29,7 +29,7 @@ public class EnemyMovement : MonoBehaviour
         {
             if ((Vector2)Position == (Vector2)enemyPath[NextWaypoint]) NextWaypoint++; // Goto to the next point if reached the current one
             var step = stepSpeed * Time.deltaTime;
-            Position = Vector2.MoveTowards(Position, enemyPath[NextWaypoint], step);
+            Position = Vector3.MoveTowards(Position, enemyPath[NextWaypoint], step);
         }
         else
         {
