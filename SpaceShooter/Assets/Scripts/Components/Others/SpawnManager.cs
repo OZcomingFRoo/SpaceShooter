@@ -7,16 +7,15 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     List<Wave> enemyWaves = new List<Wave>();
 
+    [SerializeField]
+    MissleBarrage test;
+
     void Start()
     {
         foreach (var wave in enemyWaves)
         {
             StartCoroutine(wave.StartWave());
         }
-    }
-    
-    void Update()
-    {
-        
+        StartCoroutine(test.StartWave());
     }
 }

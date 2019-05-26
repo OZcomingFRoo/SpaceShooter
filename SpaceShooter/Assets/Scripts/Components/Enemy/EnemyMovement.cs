@@ -1,6 +1,4 @@
-﻿using System.Collections;   
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -14,7 +12,6 @@ public class EnemyMovement : MonoBehaviour
     public int NextWaypoint { get; set; }
     public Vector3 Position { get { return transform.position; } set { transform.position = value; } }
     public Vector3[] EnemyPathPosition { get; set; }
-
 
     private void Start()
     {
@@ -36,6 +33,4 @@ public class EnemyMovement : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    
 }

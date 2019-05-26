@@ -351,6 +351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyWaves:
   - {fileID: 11400000, guid: f0131308a3817784aa7ed01a6a48ecb4, type: 2}
+  test: {fileID: 11400000, guid: 7d73bdcbabd945848b430b0afda69407, type: 2}
 --- !u!1 &1499966877
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,7 +457,7 @@ PrefabInstance:
     - target: {fileID: 1768713486142244966, guid: 1f0218c3dbc673d43abb0cfb4d7f4d7b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1768713486142244966, guid: 1f0218c3dbc673d43abb0cfb4d7f4d7b,
         type: 3}
@@ -571,21 +572,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5038274689120041523, guid: a336f51e6c1958b48ab349d49a618c36,
-        type: 3}
-      propertyPath: BurstRate
-      value: 0.408
-      objectReference: {fileID: 0}
-    - target: {fileID: 5038274689120041523, guid: a336f51e6c1958b48ab349d49a618c36,
-        type: 3}
-      propertyPath: LaserDamage
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5038274689120041525, guid: a336f51e6c1958b48ab349d49a618c36,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a336f51e6c1958b48ab349d49a618c36, type: 3}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6140560710551213119}
   - component: {fileID: 8503735773745805151}
   - component: {fileID: 4720539707063258169}
+  - component: {fileID: 136050361}
   m_Layer: 0
   m_Name: StraightRocketEnemy2
   m_TagString: Untagged
@@ -93,4 +94,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingPoint: {fileID: 0}
+  accelerator: 0
   velocity: {x: 0, y: 0}
+--- !u!50 &136050361
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3980189741039701291}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4fc6a4ea9edf6b4d8a71f5b07142807, type: 3}
   m_Name: TestWave
   m_EditorClassIdentifier: 
+  wavePath: {fileID: 11400000, guid: a94b6a63f8a2962488eb0d1303e79e3a, type: 2}
   enemyPrafab: {fileID: 1755387940961596379, guid: 703b6cae5908f624381e51870ed64edd,
     type: 3}
-  wavePath: {fileID: 11400000, guid: a94b6a63f8a2962488eb0d1303e79e3a, type: 2}
-  numberOfEnemiesToSpawn: 76
-  SpawnTimeBetweenEnemies: 2.95
-  EnemySpeed: 0
+  enemySpeed: 0
+  numberOfEnemiesToSpawn: 6
+  spawnTimeBetweenEnemies: 0
