@@ -29,4 +29,9 @@ public class EnemyRocket : MonoBehaviour
         velocity.y = (velocity.y * (1 + accelerator));
         Rigidbody2D.velocity = velocity * Time.deltaTime;
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(this.gameObject); // OPTIONAL TODO: Explosion should happen
+    }
 }

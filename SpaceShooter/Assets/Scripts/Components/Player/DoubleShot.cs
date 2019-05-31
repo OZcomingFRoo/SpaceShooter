@@ -48,6 +48,9 @@ public class DoubleShot : MonoBehaviour
             // Set lasers position side by side
             Laser1.transform.position = new Vector3(Laser1.transform.position.x - 0.5f, Laser1.transform.position.y,1);
             Laser2.transform.position = new Vector3(Laser2.transform.position.x + 0.5f, Laser2.transform.position.y,1);
+            // Set lasers damage
+            Laser1.GetComponent<LaserComponent>().LaserDamage = this.LaserDamage;
+            Laser2.GetComponent<LaserComponent>().LaserDamage = this.LaserDamage;
             // Shoot 2 lasers
             Laser1.GetComponent<Rigidbody2D>().velocity = Vector2.up * LaserSpeed;
             Laser2.GetComponent<Rigidbody2D>().velocity = Vector2.up * LaserSpeed;

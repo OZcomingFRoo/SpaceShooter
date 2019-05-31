@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5901102368046192388}
   - component: {fileID: 8489210889784868143}
   - component: {fileID: 8000044744022790000}
+  - component: {fileID: 1726620803003594394}
   m_Layer: 0
   m_Name: TankShipEnemy1
   m_TagString: Enemy
@@ -107,3 +108,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 737084d3d8e94a340a367cf9dbcfedeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
+--- !u!68 &1726620803003594394
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3959069994646118329}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.26}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.10581654, y: 0.008647978}
+  - {x: -0.29474264, y: 0.0059871078}
+  - {x: -0.3299547, y: 0.00585109}
+  - {x: -0.3330656, y: -0.325467}
+  - {x: -0.30048603, y: -0.31672823}
+  - {x: -0.29700685, y: -0.21238571}
+  - {x: -0.2340011, y: -0.22069442}
+  - {x: -0.10769695, y: -0.25601894}
+  - {x: -0.073685825, y: -0.41476744}
+  - {x: -0.0005515218, y: -0.5309406}
+  - {x: 0.072941184, y: -0.41336083}
+  - {x: 0.10882765, y: -0.2647342}
+  - {x: 0.23936146, y: -0.21880305}
+  - {x: 0.29426903, y: -0.21665907}
+  - {x: 0.29336804, y: -0.32063323}
+  - {x: 0.33395618, y: -0.32065964}
+  - {x: 0.33338374, y: 0.0118429065}
+  - {x: -0.09554124, y: 0.0077669024}

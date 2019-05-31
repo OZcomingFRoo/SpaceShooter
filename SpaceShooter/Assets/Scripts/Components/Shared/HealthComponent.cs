@@ -18,28 +18,32 @@ public class HealthComponent : MonoBehaviour
     void Start()
     {
         Health = health;
-        if (BeforeObjectDies == null) BeforeObjectDies = () => { Debug.Log("Object " + gameObject.name + " is dead"); };
-        if (OnObjectTookDamage == null) OnObjectTookDamage = () => { Debug.Log("Object " + gameObject.name + " Too damage"); };
+        BeforeObjectDies += () => { Debug.Log("Object " + gameObject.name + " is dead"); };
+        OnObjectTookDamage += () => { Debug.Log("Object " + gameObject.name + " Took damage"); };
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        // Calculate damage
-        if (collision.GetComponent<LaserComponent>() != null)
+        // ------ Calculate damage ------ //
+        bool didObjectTakeDamage = false;
+        if (collision.gameObject.GetComponent<LaserComponent>() != null)
         {
             Health -= collision.GetComponent<LaserComponent>().LaserDamage;
+            didObjectTakeDamage = true;
         }
-        else if(gameObject.tag == "Player")
+        else if(this.gameObject.tag == "Player")
         {
             Health--;
+            didObjectTakeDamage = true;
         }
-        // Invoke the relevent event
-        if(Health <= 0)
+
+        // ------ Invoke the relevent event ------ //
+        if (Health <= 0)
         {
             BeforeObjectDies.Invoke();
             Destroy(this.gameObject);
         }
-        else
+        else if(didObjectTakeDamage)
         {
             OnObjectTookDamage.Invoke();
         }

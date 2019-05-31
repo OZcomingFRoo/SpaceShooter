@@ -64,6 +64,7 @@ public class BurstFire : MonoBehaviour
         {
             var Laser = Instantiate(LaserPrefab, this.transform.position, Quaternion.identity);
             Laser.GetComponent<Rigidbody2D>().velocity = Vector2.up * LaserSpeed;
+            Laser.GetComponent<LaserComponent>().LaserDamage = this.LaserDamage;
             yield return new WaitForSeconds(burstFireRate);
         }
     }

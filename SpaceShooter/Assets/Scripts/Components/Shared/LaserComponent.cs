@@ -12,4 +12,9 @@ public class LaserComponent : MonoBehaviour
     {
         if (LaserDamage <= 0) LaserDamage = this.laserDamage;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(gameObject);
+    }
 }
