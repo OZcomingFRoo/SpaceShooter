@@ -26,12 +26,17 @@ public class HealthComponent : MonoBehaviour
     {
         // ------ Calculate damage ------ //
         bool didObjectTakeDamage = false;
-        if (collision.gameObject.GetComponent<LaserComponent>() != null)
+        LaserComponent projectile = collision.gameObject.GetComponent<LaserComponent>();
+        if (projectile != null)
         {
-            Health -= collision.GetComponent<LaserComponent>().LaserDamage;
-            didObjectTakeDamage = true;
+            // The condition is standalone to avoid a corner case scenario where player gets hit by his own lasers
+            if (isLaserFiredByTheOpposition(projectile.LaserType))
+            {
+                Health -= projectile.LaserDamage;
+                didObjectTakeDamage = true; 
+            }
         }
-        else if(this.gameObject.tag == "Player")
+        else if(this.gameObject.tag == GameConstants.PLAYER_TAG)
         {
             Health--;
             didObjectTakeDamage = true;
@@ -47,5 +52,13 @@ public class HealthComponent : MonoBehaviour
         {
             OnObjectTookDamage.Invoke();
         }
+    }
+
+    private bool isLaserFiredByTheOpposition(LaserType laserType)
+    {
+        string tag = this.gameObject.tag;
+        return
+            tag == GameConstants.PLAYER_TAG && laserType == LaserType.EnemyLaser ||
+            tag == GameConstants.ENEMY_TAG && laserType == LaserType.PlayerLaser;
     }
 }

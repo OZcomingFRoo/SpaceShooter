@@ -141,3 +141,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31067fb52fcd97e49918690c8c3645ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laserDamage: 2.2
+  laserType: 1
