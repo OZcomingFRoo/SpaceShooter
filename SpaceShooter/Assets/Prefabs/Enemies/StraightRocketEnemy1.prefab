@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 625456956210884214}
   - component: {fileID: 4710875101156922323}
   - component: {fileID: 1198325844}
+  - component: {fileID: 7177553079615418753}
+  - component: {fileID: 8739412594633936399}
   m_Layer: 0
   m_Name: StraightRocketEnemy1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,3 +119,61 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7177553079615418753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2886017447781590572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737084d3d8e94a340a367cf9dbcfedeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+--- !u!68 &8739412594633936399
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2886017447781590572}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.029764056, y: 0.41099712}
+  - {x: -0.13823724, y: 0.31066877}
+  - {x: -0.13637054, y: 0.12558174}
+  - {x: -0.27865207, y: 0.12668867}
+  - {x: -0.27291632, y: 0.06759758}
+  - {x: -0.22811973, y: 0.06751976}
+  - {x: -0.22698534, y: 0.018651916}
+  - {x: -0.17616415, y: 0.013573504}
+  - {x: -0.17658603, y: -0.030503226}
+  - {x: -0.1361953, y: -0.035691835}
+  - {x: -0.13139892, y: -0.32354763}
+  - {x: -0.08257353, y: -0.32639906}
+  - {x: -0.07059097, y: -0.36098483}
+  - {x: -0.037341356, y: -0.3646761}
+  - {x: -0.0022234917, y: -0.42186317}
+  - {x: 0.020108938, y: -0.3598617}
+  - {x: 0.059491992, y: -0.35849032}
+  - {x: 0.06025791, y: -0.32302803}
+  - {x: 0.12472296, y: -0.31563696}
+  - {x: 0.12546146, y: -0.03568077}
+  - {x: 0.17389059, y: -0.031927634}
+  - {x: 0.17357337, y: 0.019170715}
+  - {x: 0.21306801, y: 0.021868039}
+  - {x: 0.21266437, y: 0.074138835}
+  - {x: 0.25964224, y: 0.07220149}
+  - {x: 0.26563263, y: 0.12040792}
+  - {x: 0.1268202, y: 0.1238276}
+  - {x: 0.12278664, y: 0.3100627}
+  - {x: 0.013418913, y: 0.41039085}

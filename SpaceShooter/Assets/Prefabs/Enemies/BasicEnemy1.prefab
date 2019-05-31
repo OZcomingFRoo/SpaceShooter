@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 2606024395038836290}
   - component: {fileID: 4453381253702873390}
   - component: {fileID: 5413637606183910728}
+  - component: {fileID: 3310738782376348017}
+  - component: {fileID: 6983570154461355888}
   m_Layer: 0
   m_Name: BasicEnemy1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,3 +96,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPath: {fileID: 0}
   stepSpeed: 35
+--- !u!68 &3310738782376348017
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755387940961596379}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.7}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.49999997, y: 0}
+  - {x: 0.0043531084, y: -1.3325183}
+  - {x: 0.4676089, y: -0.0102312565}
+  - {x: -0.48989293, y: 0}
+--- !u!114 &6983570154461355888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755387940961596379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737084d3d8e94a340a367cf9dbcfedeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0

@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 1476563109894626017}
   - component: {fileID: 1476563109894626018}
   - component: {fileID: 1476563109894626019}
+  - component: {fileID: 5128850933176254426}
+  - component: {fileID: 2232051393757877118}
   m_Layer: 0
   m_Name: ManyGunsEnemy1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,3 +96,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPath: {fileID: 0}
   stepSpeed: 25
+--- !u!114 &5128850933176254426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476563109894625564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737084d3d8e94a340a367cf9dbcfedeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+--- !u!68 &2232051393757877118
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476563109894625564}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.37}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.0037055016, y: 0}
+  - {x: -0.31339788, y: -0.07566762}
+  - {x: -0.33040452, y: -0.22300726}
+  - {x: -0.49937367, y: -0.22628981}
+  - {x: -0.4993236, y: -0.6612572}
+  - {x: -0.30800128, y: -0.66752183}
+  - {x: 0.00022673607, y: -0.7504047}
+  - {x: 0.31160164, y: -0.6676718}
+  - {x: 0.49492478, y: -0.66993785}
+  - {x: 0.48606896, y: -0.21836543}
+  - {x: 0.34195614, y: -0.21715322}
+  - {x: 0.3238132, y: -0.06970924}
+  - {x: 0.009757757, y: 0.006052345}

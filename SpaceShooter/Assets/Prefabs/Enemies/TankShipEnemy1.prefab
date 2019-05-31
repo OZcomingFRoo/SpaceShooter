@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3330587865294934516}
   - component: {fileID: 5901102368046192388}
   - component: {fileID: 8489210889784868143}
+  - component: {fileID: 8000044744022790000}
   m_Layer: 0
   m_Name: TankShipEnemy1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,3 +95,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPath: {fileID: 0}
   stepSpeed: 12
+--- !u!114 &8000044744022790000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3959069994646118329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737084d3d8e94a340a367cf9dbcfedeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

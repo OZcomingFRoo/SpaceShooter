@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 6771986429184937473}
   - component: {fileID: 2285000560906377606}
   - component: {fileID: 4123272750826595596}
+  - component: {fileID: 8698512948089332000}
   m_Layer: 0
   m_Name: DoubleShotLaser
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,3 +129,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &8698512948089332000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5409833321561744892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31067fb52fcd97e49918690c8c3645ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

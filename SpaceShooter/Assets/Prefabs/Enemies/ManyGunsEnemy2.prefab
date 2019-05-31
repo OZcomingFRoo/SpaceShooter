@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 5381078984972473718}
   - component: {fileID: 48840452669623628}
   - component: {fileID: 3022163188411723781}
+  - component: {fileID: 8704699198403354960}
+  - component: {fileID: 1642628577473862424}
   m_Layer: 0
   m_Name: ManyGunsEnemy2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,3 +96,62 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPath: {fileID: 0}
   stepSpeed: 10
+--- !u!114 &8704699198403354960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9024160928595123725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737084d3d8e94a340a367cf9dbcfedeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+--- !u!68 &1642628577473862424
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9024160928595123725}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.38}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.031718254, y: -0.7202809}
+  - {x: -0.031718414, y: -0.60122615}
+  - {x: -0.17314593, y: -0.5405643}
+  - {x: -0.24667883, y: -0.5979888}
+  - {x: -0.25035524, y: -0.67967033}
+  - {x: -0.30854368, y: -0.67836046}
+  - {x: -0.308146, y: -0.6074201}
+  - {x: -0.45119303, y: -0.48230588}
+  - {x: -0.45330638, y: -0.67433023}
+  - {x: -0.49618357, y: -0.6775212}
+  - {x: -0.49547037, y: -0.24380845}
+  - {x: -0.34379625, y: -0.22278702}
+  - {x: -0.24590349, y: -0.1192953}
+  - {x: 0.0014381409, y: -0.035716444}
+  - {x: 0.1793569, y: -0.049168766}
+  - {x: 0.30994004, y: -0.080895185}
+  - {x: 0.33916092, y: -0.21565288}
+  - {x: 0.49689406, y: -0.223858}
+  - {x: 0.49477118, y: -0.6746352}
+  - {x: 0.45423716, y: -0.67486155}
+  - {x: 0.45081758, y: -0.4721222}
+  - {x: 0.30700144, y: -0.601608}
+  - {x: 0.30038533, y: -0.675846}
+  - {x: 0.25272274, y: -0.68063366}
+  - {x: 0.25273037, y: -0.6130274}
+  - {x: 0.15766177, y: -0.52140707}
+  - {x: 0.0811259, y: -0.56847763}
+  - {x: 0.023582458, y: -0.609226}
+  - {x: 0.030421734, y: -0.7639593}
+  - {x: -0.03177802, y: -0.767903}
