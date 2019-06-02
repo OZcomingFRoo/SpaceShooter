@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6198773176170601162}
   - component: {fileID: 4649927251181230643}
   - component: {fileID: 1838754510829259673}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TankShipEnemy2
   m_TagString: Enemy
   m_Icon: {fileID: 0}

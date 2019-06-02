@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5413637606183910728}
   - component: {fileID: 3310738782376348017}
   - component: {fileID: 6983570154461355888}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BasicEnemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}

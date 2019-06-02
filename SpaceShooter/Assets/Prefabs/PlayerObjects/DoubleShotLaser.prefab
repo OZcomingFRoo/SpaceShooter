@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2285000560906377606}
   - component: {fileID: 4123272750826595596}
   - component: {fileID: 8698512948089332000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DoubleShotLaser
   m_TagString: Laser
   m_Icon: {fileID: 0}

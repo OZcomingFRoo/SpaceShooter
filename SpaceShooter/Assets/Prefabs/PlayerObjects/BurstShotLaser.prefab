@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8770676114778871781}
   - component: {fileID: 4750486685482311856}
   - component: {fileID: 6594591808305249887}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BurstShotLaser
   m_TagString: Laser
   m_Icon: {fileID: 0}

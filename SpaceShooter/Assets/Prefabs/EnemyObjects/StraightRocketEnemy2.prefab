@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 136050361}
   - component: {fileID: 8626883082414362995}
   - component: {fileID: 6946641536387803956}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StraightRocketEnemy2
   m_TagString: Enemy
   m_Icon: {fileID: 0}

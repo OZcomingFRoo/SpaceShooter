@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HealthComponent : MonoBehaviour
@@ -29,14 +28,10 @@ public class HealthComponent : MonoBehaviour
         LaserComponent projectile = collision.gameObject.GetComponent<LaserComponent>();
         if (projectile != null)
         {
-            // The condition is standalone to avoid a corner case scenario where player gets hit by his own lasers
-            if (isLaserFiredByTheOpposition(projectile.LaserType))
-            {
-                Health -= projectile.LaserDamage;
-                didObjectTakeDamage = true; 
-            }
+            Health -= projectile.LaserDamage;
+            didObjectTakeDamage = true;
         }
-        else if(this.gameObject.tag == GameConstants.PLAYER_TAG)
+        else if (this.gameObject.tag == GameConstants.PLAYER_TAG)
         {
             Health--;
             didObjectTakeDamage = true;
@@ -48,17 +43,9 @@ public class HealthComponent : MonoBehaviour
             BeforeObjectDies.Invoke();
             Destroy(this.gameObject);
         }
-        else if(didObjectTakeDamage)
+        else if (didObjectTakeDamage)
         {
             OnObjectTookDamage.Invoke();
         }
-    }
-
-    private bool isLaserFiredByTheOpposition(LaserType laserType)
-    {
-        string tag = this.gameObject.tag;
-        return
-            tag == GameConstants.PLAYER_TAG && laserType == LaserType.EnemyLaser ||
-            tag == GameConstants.ENEMY_TAG && laserType == LaserType.PlayerLaser;
     }
 }

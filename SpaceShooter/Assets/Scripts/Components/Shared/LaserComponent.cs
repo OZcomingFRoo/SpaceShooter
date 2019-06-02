@@ -19,20 +19,6 @@ public class LaserComponent : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag != GameConstants.LASER_TAG)
-        {
-            if (isLaserFiredByTheOpposition(collision.gameObject.tag))
-            {
-                Destroy(gameObject);  
-            }
-        }
-    }
-
-    private bool isLaserFiredByTheOpposition(string tag)
-    {
-        return 
-            tag == GameConstants.PLAYER_TAG && laserType == LaserType.EnemyLaser ||
-            tag == GameConstants.ENEMY_TAG && laserType == LaserType.PlayerLaser;
-
+        Destroy(gameObject);
     }
 }
