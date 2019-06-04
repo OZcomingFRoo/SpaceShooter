@@ -5,13 +5,17 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Barrage", menuName = "Missle Barrage")]
 public class MissleBarrage : ScriptableObject
 {
-    [SerializeField] private Waypoint startingPoint;
-
+    [Header("Asset Propeties")]
     [SerializeField] private GameObject enemyPrafab;
 
+    [Header("Movement Setting")]
     [SerializeField] private Vector2 velocity;
-
     [SerializeField] [Range(0, 0.4f)] private float accelerator;
+
+    [Header("Spawn Setting")]
+    [SerializeField] private Waypoint startingPoint;
+    [SerializeField] [Min(1)] private int numberOfEnemiesToSpawn;
+    [SerializeField] [Range(0.01f, 3)] private float spawnTimeBetweenEnemies;
 
     private void SetRocket(GameObject rocket)
     {
@@ -20,10 +24,6 @@ public class MissleBarrage : ScriptableObject
         rocketScript.velocity = velocity;
         if (accelerator > 0) rocketScript.accelerator = accelerator;
     }
-
-    [SerializeField] [Min(1)] private int numberOfEnemiesToSpawn;
-
-    [SerializeField] [Range(0.01f, 3)] private float spawnTimeBetweenEnemies;
 
     public List<GameObject> RocketReferences { get; private set; }
     public int NumberOfEnemiesToSpawn { get; set; }
