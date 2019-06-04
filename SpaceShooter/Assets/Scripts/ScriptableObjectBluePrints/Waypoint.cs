@@ -14,11 +14,26 @@ public class Waypoint : ScriptableObject
     [Range(0, 1.5f)]
     private float YPoint;
 
+    void Awake()
+    {
+        if(YPoint != default)
+        {
+            YPointProperty = YPoint;
+        }
+        if (XPoint != default)
+        {
+            XPointProperty = XPoint;
+        }
+    }
+
+    public float XPointProperty { get; set; }
+    public float YPointProperty { get; set; }
+
     public Vector3 WaypointGlobalPosition
     {
         get
         {
-            return Camera.main.ViewportToWorldPoint(new Vector3(XPoint, YPoint, 1));
+            return Camera.main.ViewportToWorldPoint(new Vector3(XPointProperty, YPointProperty, 1));
         }
     }
 }

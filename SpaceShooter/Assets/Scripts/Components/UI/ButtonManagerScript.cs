@@ -60,7 +60,7 @@ public class ButtonManagerScript : MonoBehaviour
 
     private void PressButton()
     {
-        transform.GetChild(ButtonIndex).GetComponent<Button>().onClick.Invoke();
+        transform.GetChild(Buttons[ButtonIndex]).GetComponent<Button>().onClick.Invoke();
     }
     private void UnHighlightButton()
     {

@@ -15,7 +15,7 @@ public class MissleBarrage : ScriptableObject
     [Header("Spawn Setting")]
     [SerializeField] private Waypoint startingPoint;
     [SerializeField] [Min(1)] private int numberOfEnemiesToSpawn;
-    [SerializeField] [Range(0.01f, 3)] private float spawnTimeBetweenEnemies;
+    [SerializeField] [Range(0.01f, 10)] private float spawnTimeBetweenEnemies;
 
     private void SetRocket(GameObject rocket)
     {
@@ -47,7 +47,7 @@ public class MissleBarrage : ScriptableObject
             RocketReferences.Add(rocket); // Set enemy's path and speed
             SetRocket(rocket);
             rocket.SetActive(true); // Enable enemy to start moving
-            yield return new WaitForSeconds(SpawnTimeBetweenEnemies * 10); // Wait a little before spawn the next enemy
+            yield return new WaitForSeconds(SpawnTimeBetweenEnemies); // Wait a little before spawn the next enemy
         }
     }
 }
