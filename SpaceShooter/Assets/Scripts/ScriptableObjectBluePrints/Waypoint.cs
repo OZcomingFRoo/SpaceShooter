@@ -7,11 +7,11 @@
 public class Waypoint : ScriptableObject
 {
     [SerializeField]
-    [Range(0, 1.5f)]
+    [Range(-0.5f, 1.5f)]
     private float XPoint;
 
     [SerializeField]
-    [Range(0, 1.5f)]
+    [Range(-0.5f, 1.5f)]
     private float YPoint;
 
     void Awake()

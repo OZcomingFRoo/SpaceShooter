@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f1156da30387fd4295c526028cfa74f, type: 3}
-  m_Name: SimpleStraightMissleBarrage
+  m_Name: CurvedRocketsFromL
   m_EditorClassIdentifier: 
-  enemyPrafab: {fileID: 3980189741039701291, guid: 36b6508a7067c8c468ff3a08fc78e7a4,
+  enemyPrafab: {fileID: 2886017447781590572, guid: fce2101bce0dab04a858e5b34d2162a8,
     type: 3}
-  velocity: {x: 0, y: 1000}
-  accelerator: 0
-  startingPoint: {fileID: 11400000, guid: 07041dce77beb954ca4fe249dec88775, type: 2}
+  velocity: {x: 500, y: 50}
+  accelerator: 0.05
+  startingPoint: {fileID: 11400000, guid: 9e75c8dc94ab6be4791192603a9a3c47, type: 2}
   numberOfEnemiesToSpawn: 5
-  spawnTimeBetweenEnemies: 1
+  spawnTimeBetweenEnemies: 1.8

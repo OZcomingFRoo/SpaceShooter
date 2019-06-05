@@ -48,6 +48,8 @@ public class Wave : ScriptableObject
     [Range(0.01f, 3)]
     [SerializeField] private float spawnTimeBetweenEnemies;
 
+    [SerializeField] private bool LoopBackAndFourth = false;
+
     public List<GameObject> EnemyReferences { get; private set; }
     public float SpawnTimeBetweenEnemies { get; set; }
     public int NumberOfEnemiesToSpawn { get; set; }

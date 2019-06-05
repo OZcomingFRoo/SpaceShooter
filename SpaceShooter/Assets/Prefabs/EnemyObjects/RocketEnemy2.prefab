@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1877249342816788702}
   - component: {fileID: 625456956210884214}
-  - component: {fileID: 4710875101156922323}
   - component: {fileID: 1198325844}
   - component: {fileID: 7177553079615418753}
   - component: {fileID: 8739412594633936399}
+  - component: {fileID: 8293236030535115514}
   m_Layer: 9
-  m_Name: StraightRocketEnemy1
+  m_Name: RocketEnemy2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,21 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4710875101156922323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2886017447781590572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2b097bd1f2e6a248bd6cc81af4719c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingPoint: {fileID: 0}
-  accelerator: 0
-  velocity: {x: 0, y: 0}
 --- !u!50 &1198325844
 Rigidbody2D:
   serializedVersion: 4
@@ -131,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 737084d3d8e94a340a367cf9dbcfedeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 1.2
 --- !u!68 &8739412594633936399
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -177,3 +162,18 @@ EdgeCollider2D:
   - {x: 0.1268202, y: 0.1238276}
   - {x: 0.12278664, y: 0.3100627}
   - {x: 0.013418913, y: 0.41039085}
+--- !u!114 &8293236030535115514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2886017447781590572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b097bd1f2e6a248bd6cc81af4719c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingPoint: {fileID: 0}
+  accelerator: 0
+  velocity: {x: 0, y: 0}

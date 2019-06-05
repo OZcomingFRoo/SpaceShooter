@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyRocket : MonoBehaviour
+public class EnemyMissile : MonoBehaviour
 {
     [SerializeField]
     public Waypoint startingPoint;
